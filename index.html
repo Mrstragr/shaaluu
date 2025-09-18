@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Sister!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="message">
+        <h1>🎉 Happy Birthday! 🎂</h1>
+        <p class="subtitle">Click the magical gift box to reveal your surprise!</p>
+        <div class="round-counter" id="roundCounter">Round 1 of 5</div>
+    </div>
+
+    <!-- Floating Birthday Elements -->
+    <div class="floating-elements">
+        <div class="balloon balloon-1">🎈</div>
+        <div class="balloon balloon-2">🎈</div>
+        <div class="balloon balloon-3">🎈</div>
+        <div class="balloon balloon-4">🎈</div>
+        <div class="star star-1">⭐</div>
+        <div class="star star-2">⭐</div>
+        <div class="star star-3">⭐</div>
+        <div class="star star-4">⭐</div>
+        <div class="star star-5">⭐</div>
+        <div class="party-emoji party-1">🎊</div>
+        <div class="party-emoji party-2">🎉</div>
+        <div class="party-emoji party-3">🎁</div>
+        <div class="party-emoji party-4">🎂</div>
+    </div>
+    
+    <div class="gift-box" id="giftBox">
+        <div class="lid"></div>
+        <div class="base"></div>
+    </div>
+
+    <div class="photo-container" id="photoContainer">
+        </div>
+
+    <canvas id="confettiCanvas" class="confetti-canvas" aria-hidden="true"></canvas>
+
+    <div class="controls" aria-label="Playback controls">
+        <button id="replayBtn" type="button">Next</button>
+        <button id="muteBtn" type="button" aria-pressed="false">Mute</button>
+    </div>
+
+    <audio id="birthdaySound" src="Birthday-Hindi-Song-1.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
